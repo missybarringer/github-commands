@@ -43,6 +43,12 @@ _A list of my commonly used Git commands_
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
 | `git stash` | Stash changes in a dirty working directory |
 | `git stash clear` | Remove all stashed entries |
+| `git stash apply` | Bring your work back |
+| `git stash list` | See all of your current stashes |
+| `git stash apply stash@{1}` | Apply the second stash |
+| `git stash pop` | easily apply the top stash on the stack |
+| `git stash drop <id>` | deletes that stash for good |
+| `git stash clear` | deletes all of the stored stashes |
 
 ### Sharing & Updating Projects
 
