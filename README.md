@@ -1,6 +1,8 @@
 # github-commands
 Commonly used github commands
 ============
+Problem: Several links to various sites for different Github commands
+Solution: Combine commands into my own repository for future reference
 
 _A list of my commonly used Git commands_
 
