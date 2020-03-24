@@ -13,7 +13,7 @@ _A list of my commonly used Git commands_
 | Command | Description |
 | ------- | ----------- |
 | `git init` | Initialize a local Git repository |
-| `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
+| `git clone [url]` | Create a local copy of a remote repository |
 
 ### Basic Snapshotting
 
@@ -21,6 +21,7 @@ _A list of my commonly used Git commands_
 | ------- | ----------- |
 | `git status` | Check status |
 | `git add [file-name.txt]` | Add a file to the staging area |
+| `git reset [file-name.txt]` | Unstage a file while retaining the changes in working directory |
 | `git add -A` | Add all new and changed files to the staging area |
 | `git commit -m "[commit message]"` | Commit changes |
 | `git rm -r [file-name.txt]` | Remove a file (or folder) |
