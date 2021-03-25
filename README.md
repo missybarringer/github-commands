@@ -51,7 +51,6 @@ _A list of my commonly used Git commands_
 | `git stash apply stash@{1}` | Apply the second stash (0,1) |
 | `git stash pop` | easily apply the top stash on the stack |
 | `git stash drop <id>` | deletes that stash for good |
-| `git stash clear` | deletes all of the stored stashes |
 
 ### Sharing & Updating Projects
 
@@ -83,15 +82,23 @@ _A list of my commonly used Git commands_
 | ------- | ----------- |
 | `git rebase [branch]` | Apply any commits of current branch ahead of specified one |
 | `git reset --hard[commit]` | Clear staging area, rewrite working tree from specified commit |
+| `git revert <commit 1> <commit 2>` | Revert a change that was commited |
+| `git clean -f` | Remove un-tracked files (e.g. new files, generated files) |
+| `git clean -f -d -n` | Preview un-tracked directories (e.g. new or automatically generated directories) |
+| `git clean -fd` | Remove un-tracked directories (e.g. new or automatically generated directories)
 
 ### Inspection & Comparison
 
 | Command | Description |
 | ------- | ----------- |
 | `git log` | View changes |
+| `git log --follow [file]` | Show the commits that changed file, even across renames  |
 | `git log --summary` | View changes (detailed) |
 | `git log branchB..branchA` | Show the commits on branchA that are not on branchB |
-| `git log --summary` |  |
+| `git log show [SHA]` | Show any object in Git in human-readable format |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
+| `git diff master` | Diff between current branch & master |
+| `git diff branch1..branch2` | Diff between 2 branches, e.g. branch1 & branch2 |
+| `git diff --name-status branch1..branch2` | Show only files that are different between the 2 branches (without changes themselves )
 
 ### Thanks to kumabotz & joshnh for their repositories!
